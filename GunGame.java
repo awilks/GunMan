@@ -50,10 +50,11 @@ public class GunGame extends JPanel implements Runnable {
          graphics = new GameGraphics(hero,map,enemies, mapCreator.tileW, mapCreator.tileH);
          setLayout(new BorderLayout());
          add(graphics);
-         graphics.setVisible(true);
+         //graphics.setVisible(true);
          graphics.init();
          graphics.repaint();
          thread.start();
+         frame.requestFocus();
          
      }
 

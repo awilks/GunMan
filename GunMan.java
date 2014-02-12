@@ -72,9 +72,9 @@ public class GunMan extends JFrame implements KeyListener {
         setVisible(true);
         gunGame.init(levelAt);
         setVisible(true);
-        setFocusable(true);
-        requestFocus(true);
-        gunGame.requestFocus(true);
+        //setFocusable(true);
+        System.out.println("" + requestFocus(true));
+       
 
     }
 
