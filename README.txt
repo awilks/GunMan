@@ -1,0 +1,1 @@
+main method is in GunMan.java. Levels are in main folder and Images are in the Images folder. When the program retrieves images from the image folder it uses Linux path conventions so this may cause a bug on windows computers.
