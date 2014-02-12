@@ -1,1 +1,1 @@
-main method is in GunMan.java. Levels are in main folder and Images are in the Images folder. When the program retrieves images from the image folder it uses Linux path conventions so this may cause a bug on windows computers.
+Main method is in GunMan.java. Levels are in main folder and Images are in the Images folder. When the program retrieves images from the image folder it uses Linux path conventions so this may cause a bug on windows computers.The level select feature does not work either. Controls: space is shoot and arrow keys are for movement.
