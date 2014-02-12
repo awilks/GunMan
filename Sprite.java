@@ -35,6 +35,7 @@ public class Sprite {
     int health;
     boolean invincible;
     int invincibleTime;
+    public boolean falling;
 
 
     //creates object and sets location and dimensions
@@ -146,8 +147,10 @@ public class Sprite {
                 //System.out.println("good fix");
                 y+=yOverlap+0.00000001;
                 if(yOverlap>0)
+                {
                     vy = g;
-
+                    falling=true;
+                }
                 else
                 {
                     vy = 0;

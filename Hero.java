@@ -76,6 +76,7 @@ public class Hero extends Sprite {
             if(Math.round(vy*10000) == 0 && onGround)
             {
                 inToJump = 7;
+                falling =false;
                 vy -= (inToJump*0.5+5)*upAccel;
                 onGround = false;
                 //System.out.println(vy);
@@ -84,10 +85,18 @@ public class Hero extends Sprite {
             }
             else if(inToJump>0)
             {
-                inToJump--;
-                vy-= (inToJump*0.5+5)+upAccel;
-                if(vy < -maxSpeed)
-                    vy= -maxSpeed;
+                if(falling ==true)
+                {
+                    inToJump =0;
+                }
+                else
+                {
+                    inToJump--;
+                    vy-= (inToJump*0.5+5)+upAccel;
+                    if(vy < -maxSpeed)
+                       vy= -maxSpeed;
+                }
+                
             }
         }
         else
